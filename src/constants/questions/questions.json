@@ -115,20 +115,20 @@
         ]
     },
     {
-        "id": 0,
-        "category": "Anorexia de valores",
-        "title": "¿Cuál es el resultado de la sobreexplotación de la biodiversidad?",
+        "id": 5,
+        "category": "Pánico a reusar, reparar y reducir",
+        "title": "¿Cuál es un método para reusar la basura?",
         "answers": [
             {
-                "title": "Tristeza en los seres humanos.",
+                "title": "Úsala como almohada.",
                 "value": false
             },
             {
-                "title": "Mayor riesgo de extinción de especies.",
+                "title": "Haz una maceta.",
                 "value": true
             },
             {
-                "title": "Menor cantidad de parques.",
+                "title": "Derrítela.",
                 "value": false
             },
             {
@@ -138,20 +138,20 @@
         ]
     },
     {
-        "id": 0,
-        "category": "Anorexia de valores",
-        "title": "¿Cuál es el resultado de la sobreexplotación de la biodiversidad?",
+        "id": 6,
+        "category": "Compradicción",
+        "title": "¿Qué es el Día del Sobregiro Ecológico de la Tierra?",
         "answers": [
             {
-                "title": "Tristeza en los seres humanos.",
+                "title": "El día que cumple años la tierra.",
                 "value": false
             },
             {
-                "title": "Mayor riesgo de extinción de especies.",
+                "title": "El día en que se acaban los recursos para un año.",
                 "value": true
             },
             {
-                "title": "Menor cantidad de parques.",
+                "title": "El día en donde mayor concentración de rayos UV hay.",
                 "value": false
             },
             {
@@ -161,43 +161,39 @@
         ]
     },
     {
-        "id": 0,
-        "category": "Anorexia de valores",
-        "title": "¿Cuál es el resultado de la sobreexplotación de la biodiversidad?",
+        "id": 7,
+        "category": "Compradicción",
+        "title": "Para finalizar el 2021, ¿Cuántos planetas tierra son necesarios?",
         "answers": [
             {
-                "title": "Tristeza en los seres humanos.",
+                "title": "7.1 planetas tierras.",
                 "value": false
             },
             {
-                "title": "Mayor riesgo de extinción de especies.",
+                "title": "1.7 planetas tierra.",
                 "value": true
             },
             {
-                "title": "Menor cantidad de parques.",
-                "value": false
-            },
-            {
-                "title": "Ninguna de las anteriores.",
+                "title": "107 planetas tierras.",
                 "value": false
             }
         ]
     },
     {
-        "id": 0,
-        "category": "Anorexia de valores",
-        "title": "¿Cuál es el resultado de la sobreexplotación de la biodiversidad?",
+        "id": 8,
+        "category": "Compradicción",
+        "title": "¿Cómo podemos combatir la compradicción?",
         "answers": [
             {
-                "title": "Tristeza en los seres humanos.",
+                "title": "Guarda tu dinero en una caja fuerte.",
                 "value": false
             },
             {
-                "title": "Mayor riesgo de extinción de especies.",
+                "title": "Recicla todo lo que se consume.",
                 "value": true
             },
             {
-                "title": "Menor cantidad de parques.",
+                "title": "No ahorres energía.",
                 "value": false
             },
             {

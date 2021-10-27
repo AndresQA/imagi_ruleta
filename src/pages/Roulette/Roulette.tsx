@@ -48,9 +48,9 @@ const RouletteWheel = () => {
     }
 
     const data = [
-        { option: '0', style: { backgroundColor: 'green', textColor: 'black' } },
-        { option: '1', style: { backgroundColor: 'white' } },
-        { option: '2' },
+        { option: '0', style: { backgroundColor: '#CA813D', textColor: 'white' } },
+        { option: '1', style: { backgroundColor: '#60AF57', textColor: 'white' } },
+        { option: '2', style: { backgroundColor: '#00A79C', textColor: 'white' } },
     ]
 
     return <div className="Index backgroundType2 backgroundImg" style={{ backgroundImage: 'url(/images/background3.svg)' }}>
@@ -59,7 +59,7 @@ const RouletteWheel = () => {
             <h2>Ingresa tus datos</h2>
             <Wheel
                 mustStartSpinning={spin}
-                prizeNumber={3}
+                prizeNumber={1}
                 data={data}
                 backgroundColors={['#3e3e3e', '#df3428']}
                 textColors={['#ffffff']}
