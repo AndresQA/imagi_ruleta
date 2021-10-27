@@ -1,0 +1,11 @@
+.register_inputs{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    input{
+        margin: 10px;
+        padding: 10px;
+        font-family: "Copperplate";
+        border: none;
+    }
+}

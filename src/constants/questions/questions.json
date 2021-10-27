@@ -1,0 +1,209 @@
+[
+    {
+        "id": 0,
+        "category": "Anorexia de valores",
+        "title": "¿Cuál es el resultado de la sobreexplotación de la biodiversidad?",
+        "answers": [
+            {
+                "title": "Tristeza en los seres humanos.",
+                "value": false
+            },
+            {
+                "title": "Mayor riesgo de extinción de especies.",
+                "value": true
+            },
+            {
+                "title": "Menor cantidad de parques.",
+                "value": false
+            },
+            {
+                "title": "Ninguna de las anteriores.",
+                "value": false
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "category": "Anorexia de valores",
+        "title": "¿Cuáles actividades aumentan las sustancias químicas en el ambiente?",
+        "answers": [
+            {
+                "title": "Actividades industriales y urbanas.",
+                "value": true
+            },
+            {
+                "title": "Actividades jurídicas.",
+                "value": false
+            },
+            {
+                "title": "Actividades de belleza y diversión.",
+                "value": false
+            },
+            {
+                "title": "Ninguna de las anteriores.",
+                "value": false
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "category": "Anorexia de valores",
+        "title": "¿Cómo se puede detener la sobreexplotación de la biodiversidad?",
+        "answers": [
+            {
+                "title": "Caza más animales.",
+                "value": false
+            },
+            {
+                "title": "Planta árboles.",
+                "value": true
+            },
+            {
+                "title": "Consume enlatados.",
+                "value": false
+            },
+            {
+                "title": "Ninguna de las anteriores.",
+                "value": false
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "category": "Pánico a reusar, reparar y reducir",
+        "title": "¿Cómo se llama la enfermedad que lastima al segundo paisaje?",
+        "answers": [
+            {
+                "title": "Gripe.",
+                "value": false
+            },
+            {
+                "title": "Pánico a reusar, reparar y reducir.",
+                "value": true
+            },
+            {
+                "title": "Compradicción.",
+                "value": false
+            },
+            {
+                "title": "Ninguna de las anteriores.",
+                "value": false
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "category": "Pánico a reusar, reparar y reducir",
+        "title": "¿Qué es el efecto invernadero?",
+        "answers": [
+            {
+                "title": "Frío por dentro, calor por fuera.",
+                "value": false
+            },
+            {
+                "title": "Algunos gases se quedan en la atmósfera.",
+                "value": true
+            },
+            {
+                "title": "Algunos líquidos se quedan en la atmósfera.",
+                "value": false
+            },
+            {
+                "title": "Ninguna de las anteriores.",
+                "value": false
+            }
+        ]
+    },
+    {
+        "id": 0,
+        "category": "Anorexia de valores",
+        "title": "¿Cuál es el resultado de la sobreexplotación de la biodiversidad?",
+        "answers": [
+            {
+                "title": "Tristeza en los seres humanos.",
+                "value": false
+            },
+            {
+                "title": "Mayor riesgo de extinción de especies.",
+                "value": true
+            },
+            {
+                "title": "Menor cantidad de parques.",
+                "value": false
+            },
+            {
+                "title": "Ninguna de las anteriores.",
+                "value": false
+            }
+        ]
+    },
+    {
+        "id": 0,
+        "category": "Anorexia de valores",
+        "title": "¿Cuál es el resultado de la sobreexplotación de la biodiversidad?",
+        "answers": [
+            {
+                "title": "Tristeza en los seres humanos.",
+                "value": false
+            },
+            {
+                "title": "Mayor riesgo de extinción de especies.",
+                "value": true
+            },
+            {
+                "title": "Menor cantidad de parques.",
+                "value": false
+            },
+            {
+                "title": "Ninguna de las anteriores.",
+                "value": false
+            }
+        ]
+    },
+    {
+        "id": 0,
+        "category": "Anorexia de valores",
+        "title": "¿Cuál es el resultado de la sobreexplotación de la biodiversidad?",
+        "answers": [
+            {
+                "title": "Tristeza en los seres humanos.",
+                "value": false
+            },
+            {
+                "title": "Mayor riesgo de extinción de especies.",
+                "value": true
+            },
+            {
+                "title": "Menor cantidad de parques.",
+                "value": false
+            },
+            {
+                "title": "Ninguna de las anteriores.",
+                "value": false
+            }
+        ]
+    },
+    {
+        "id": 0,
+        "category": "Anorexia de valores",
+        "title": "¿Cuál es el resultado de la sobreexplotación de la biodiversidad?",
+        "answers": [
+            {
+                "title": "Tristeza en los seres humanos.",
+                "value": false
+            },
+            {
+                "title": "Mayor riesgo de extinción de especies.",
+                "value": true
+            },
+            {
+                "title": "Menor cantidad de parques.",
+                "value": false
+            },
+            {
+                "title": "Ninguna de las anteriores.",
+                "value": false
+            }
+        ]
+    }
+]
