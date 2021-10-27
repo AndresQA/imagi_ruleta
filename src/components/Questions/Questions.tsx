@@ -15,9 +15,9 @@ const Questions = ({data}: {data:IQuestion}) => {
         console.log(state);
     }
     return <div>
-        <h2>{title}</h2>
+        <h2 className="question_title">{title}</h2>
         {answers.map((option, index)=>{
-            return <p key={index} onClick={()=>onValidate(option.value)}>{option.title}</p>
+            return <p className="question" key={index} onClick={()=>onValidate(option.value)}>{option.title}</p>
         })}
     </div>
 }

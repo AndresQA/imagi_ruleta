@@ -39,7 +39,7 @@ const RouletteWheel = () => {
         if (question) {
             question.answers = shuffle(question.answers);
             const history = new Map<number, boolean>();
-            questionCorrect.forEach((value, key)=> {
+            questionCorrect.forEach((value, key) => {
                 history.set(key, value);
             })
             history.set(question.id, false);
@@ -55,21 +55,22 @@ const RouletteWheel = () => {
 
     return <div className="Index backgroundType2 backgroundImg" style={{ backgroundImage: 'url(/images/background3.svg)' }}>
 
-        <div className="container">
-            <h2>Ingresa tus datos</h2>
-            <Wheel
-                mustStartSpinning={spin}
-                prizeNumber={1}
-                data={data}
-                backgroundColors={['#3e3e3e', '#df3428']}
-                textColors={['#ffffff']}
-                onStopSpinning={() => {
-                    setSpin(false)
-                    onLoadQuestion("Pánico a reusar, reparar y reducir")
-                }
-                    
-                }
-            />
+        <div className="container_interaction">
+            <div className="containner_roulette">
+                <Wheel
+                    mustStartSpinning={spin}
+                    prizeNumber={0}
+                    data={data}
+                    backgroundColors={['#3e3e3e', '#df3428']}
+                    textColors={['#ffffff']}
+                    onStopSpinning={() => {
+                        setSpin(false)
+                        onLoadQuestion("Pánico a reusar, reparar y reducir")
+                    }
+
+                    }
+                />
+            </div>
             <button onClick={() => setSpin(true)} className="btn">Girar</button>
             {question != undefined ?
                 <Questions data={question} /> : <></>
