@@ -4,14 +4,13 @@ import 'firebase/database';
 import 'firebase/storage';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDO2MfPCJm8GCQ7BLXZR4gecXnZ3CHkbMY",
-    authDomain: "firebasssss.firebaseapp.com",
-    databaseURL: "https://firebasssss.firebaseio.com",
-    projectId: "firebasssss",
-    storageBucket: "firebasssss.appspot.com",
-    messagingSenderId: "473311544698",
-    appId: "1:473311544698:web:c6c8b970557ff121d982c3"
-  };
+  apiKey: "AIzaSyB6-zXGgkr8dsI7CvhWg7bdyaP-Qc3mgrs",
+  authDomain: "imagiruleta.firebaseapp.com",
+  projectId: "imagiruleta",
+  storageBucket: "imagiruleta.appspot.com",
+  messagingSenderId: "692875033431",
+  appId: "1:692875033431:web:3db8f900cb74cdacc29c12"
+};
 
 // Initialize Firebase
 var Firebase = firebase.default.initializeApp(firebaseConfig);

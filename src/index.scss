@@ -1,10 +1,18 @@
 @font-face {
   font-family: "Agreloy";
-  src: local(".../fonts/Agreloy.otf");
+  src: local('.../fonts/Agreloy.eot');
+  src: local('.../fonts/Agreloy.eot?#iefix') format('embedded-opentype'),
+      local('.../fonts/Agreloy.woff2') format('woff2'),
+      local('.../fonts/Agreloy.woff') format('woff'),
+      local('.../fonts/Agreloy.ttf') format('truetype');
 }
 @font-face {
   font-family: "Copperplate";
-  src: local(".../fonts/OPTICopperplate.otf");
+  src: local('.../fonts/OPTICopperplate.eot');
+  src: local('.../fonts/OPTICopperplate.eot?#iefix') format('embedded-opentype'),
+      local('.../fonts/OPTICopperplate.woff2') format('woff2'),
+      local('.../fonts/OPTICopperplate.woff') format('woff'),
+      local('.../fonts/OPTICopperplate.ttf') format('truetype');
 }
 
 * {

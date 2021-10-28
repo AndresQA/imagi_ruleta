@@ -6,7 +6,7 @@ export interface IQuestion {
     title: string,
     answers: { title: string, value: boolean }[]
 }
-
+//style={{ background: option.value ? "green" : "" }}
 const Questions = ({ data, onResult }: { data: IQuestion, onResult: (state: { id: number, title: string, value: boolean, answer: string, category: string }) => void }) => {
     const {
         title, answers
@@ -23,7 +23,7 @@ const Questions = ({ data, onResult }: { data: IQuestion, onResult: (state: { id
     return <div>
         <h2 className="question_title">{title}</h2>
         {answers.map((option, index) => {
-            return <p className="question" style={{ background: option.value ? "green" : "" }} key={index} onClick={() => onValidate(option)}>{option.title}</p>
+            return <p className="question"  key={index} onClick={() => onValidate(option)}>{option.title}</p>
         })}
     </div>
 }

@@ -11,6 +11,7 @@ import { useHistory } from 'react-router';
 import UserContext from '../Register/UserContext';
 import Database from '../../constants/firebase/database';
 import DBRoutes from '../../constants/firebase/database/DBRoutes';
+import Excel from '../../constants/excel';
 
 export function shuffle(array: any[]) {
     array.sort(function () { return Math.random() - 0.5; });
@@ -21,7 +22,7 @@ function getRandomInt(min: number, max: number) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
-interface ITest {
+export interface ITest {
     ID: string,
     name: string,
     age: number,
@@ -107,33 +108,7 @@ const RouletteWheel = () => {
         }
     }
 
-    const generateExcel = () => {
-        var matrix = [] as (string | number)[][]
-        var registros = [] as ITest[];
-
-        const titulares = ["ORDEN", "NOMBRE", "EDAD", "ERRORES", "INTENTOS", "CATEGORIA", "PREGUNTA", "RESPUESTA", "CORRECTA"]
-
-        registros.forEach(({ name, age, intentos, errores, history }, index) => {
-
-
-            history.forEach((({ title, answer, value, category }) => {
-                var fila = [] as (string | number)[]
-
-                fila.push(index)
-                fila.push(name)
-                fila.push(age)
-                fila.push(errores)
-                fila.push(intentos)
-                fila.push(category)
-                fila.push(title)
-                fila.push(answer)
-                fila.push(value ? "VERDADERO" : "FALSO")
-
-                matrix.push(fila)
-            }))
-
-        })
-    }
+    
 
     useEffect(() => {
 
@@ -162,7 +137,7 @@ const RouletteWheel = () => {
                     setHistory([...history, dato])
                 }} /> :
                 <div className="containner_roulette">
-                    <h1>{category[preguntaIndex]}</h1>
+                  {  /*<h1>{category[preguntaIndex]}</h1> */}
                     <Wheel
                         mustStartSpinning={spin}
                         prizeNumber={preguntaIndex}
@@ -179,7 +154,7 @@ const RouletteWheel = () => {
                     <button onClick={() => {
                         pregunta()
                         setSpin(true)
-                    }} className="btn" >Girar</button>
+                    }} className="btn" disabled={spin}>Girar</button>
 
                 </div>
 
