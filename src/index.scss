@@ -1,18 +1,24 @@
-@font-face {
+/*@font-face {
   font-family: "Agreloy";
-  src: local('.../fonts/Agreloy.eot');
-  src: local('.../fonts/Agreloy.eot?#iefix') format('embedded-opentype'),
-      local('.../fonts/Agreloy.woff2') format('woff2'),
-      local('.../fonts/Agreloy.woff') format('woff'),
-      local('.../fonts/Agreloy.ttf') format('truetype');
+  src: url(".../fonts/Agreloy.eot");
+  src: url(".../fonts/Agreloy.eot?#iefix") format("embedded-opentype"),
+    url(".../fonts/Agreloy.woff2") format("woff2"), url(".../fonts/Agreloy.woff") format("woff"),
+    url(".../fonts/Agreloy.ttf") format("truetype");
 }
 @font-face {
   font-family: "Copperplate";
-  src: local('.../fonts/OPTICopperplate.eot');
-  src: local('.../fonts/OPTICopperplate.eot?#iefix') format('embedded-opentype'),
-      local('.../fonts/OPTICopperplate.woff2') format('woff2'),
-      local('.../fonts/OPTICopperplate.woff') format('woff'),
-      local('.../fonts/OPTICopperplate.ttf') format('truetype');
+  src: url(".../fonts/OPTICopperplate.eot");
+  src: url(".../fonts/OPTICopperplate.eot?#iefix") format("embedded-opentype"),
+    url(".../fonts/OPTICopperplate.woff2") format("woff2"), url(".../fonts/OPTICopperplate.woff") format("woff"),
+    url(".../fonts/OPTICopperplate.ttf") format("truetype");
+}
+*/
+
+
+
+@font-face {
+  font-family: "Poppins", sans-serif;
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 }
 
 * {
@@ -22,21 +28,17 @@
 body,
 html,
 #root {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-    "Droid Sans", "Helvetica Neue", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   width: 100%;
   height: 100%;
 }
 
-h2{
-  font-family: "Agreloy";
+h2 {
+  font-family: "Agreloy" !important;
   font-size: 32px;
 }
 
-p{
-  font-family: "Copperplate";
+p {
+  font-family: "Poppins", sans-serif;
 }
 
 .backgroundImg {
@@ -51,11 +53,20 @@ p{
   border-radius: 5px;
   color: white;
   padding: 10px 25px;
-  transition: all .5s ease;
-  font-family: "Copperplate";
+  transition: all 0.5s ease;
+  /* font-family: "Copperplate";*/
   font-size: 16px;
+  -webkit-box-shadow: 4px 4px 26px 0px rgba(122,122,122,0.6);
+  -moz-box-shadow: 4px 4px 26px 0px rgba(122,122,122,0.6);
+  box-shadow: 4px 4px 26px 0px rgba(122,122,122,0.6);
   &:hover {
     background-color: #3b3b3b;
     cursor: pointer;
+  }
+}
+
+.containner_roulette{
+  .btn{
+    margin-top: 30px;
   }
 }

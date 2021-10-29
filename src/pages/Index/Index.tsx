@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Routes from '../../constants/Routes';
 
 const Index = () => {
-    return <div className="Index backgroundImg" style={{ backgroundImage: 'url(/images/background.svg)' }}>
+    return <div className="Index backgroundImg" style={{ backgroundImage: 'url(/images/fondo-10.svg)' }}>
 
         <div className="container">
             <img className="logo" src="/images/logo.png" alt="logo" />

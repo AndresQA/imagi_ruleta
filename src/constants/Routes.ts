@@ -2,7 +2,8 @@ const Routes = {
 INDEX: "/",
 REGISTER: "/datos",
 ROULETTE: "/ruleta",
-FINAL: "/fase-final"
+FINAL: "/fase-final",
+RESULTS: "/resultados"
 
 }
 

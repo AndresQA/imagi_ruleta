@@ -41,32 +41,33 @@ const RouletteWheel = () => {
     const [questionCorrect, setQuestionCorrect] = useState<Map<number, boolean>>(new Map());
     const [question, setQuestion] = useState<IQuestion | undefined>(undefined);
     const [preguntaIndex, setPreguntaIndex] = useState(0);
+    const [iconResult, setIconResult] = useState<string | undefined>(undefined);
 
     const redirect = useHistory()
 
     const [history, setHistory] = useState<{ id: number, title: string, value: boolean, answer: string, category: string }[]>([]);
 
-    const category = ['Anorexia de valores', 'Compradicción', 'Pánico a reusar, reparar y reducir'];
+    const category = [{ name: 'Anorexia de valores', img: "/images/icons/Anorexia_de_valores.svg" }, { name: 'Compradicción', img: "/images/icons/Compradiccion.svg" }, { name: 'Pánico a reusar, reparar y reducir', img: "/images/icons/Panico.svg" }];
 
     const data = [
-        { option: 'Anorexia', style: { backgroundColor: '#CA813D', textColor: 'white' } },
-        { option: 'Compradiccion', style: { backgroundColor: '#60AF57', textColor: 'white' } },
-        { option: 'Panico', style: { backgroundColor: '#00A79C', textColor: 'white' } },
+        { option: '', style: { backgroundColor: '#CA813D', textColor: 'white' } },
+        { option: '', style: { backgroundColor: '#60AF57', textColor: 'white' } },
+        { option: '', style: { backgroundColor: '#00A79C', textColor: 'white' } },
     ]
 
     const pregunta = () => {
         setPreguntaIndex(getRandomInt(0, data.length));
     }
 
-    const onLoadQuestion = (category: string) => {
+    const onLoadQuestion = ({name, img}:{name: string, img:string}) => {
         var searching = true;
         var questionSelect = [] as IQuestion[];
         questionSelect = shuffle(questions.filter((q) => {
-            if (category == q.category) {
+            if (name == q.category) {
                 return q
             }
         }));
-        var question = undefined;
+        var question = undefined as IQuestion | undefined;
         while (searching) {
             question = questionSelect[0];
             const questionCorrects = questionCorrect.get(question.id);
@@ -81,7 +82,11 @@ const RouletteWheel = () => {
             question.answers = shuffle(question.answers);
 
         }
-        setQuestion(question);
+        setIconResult(img);
+        setTimeout(() => {
+            setQuestion(question);
+            
+        }, 2000)
     }
 
     const onNextPage = () => {
@@ -108,7 +113,7 @@ const RouletteWheel = () => {
         }
     }
 
-    
+
 
     useEffect(() => {
 
@@ -116,7 +121,7 @@ const RouletteWheel = () => {
     }, [history])
 
 
-    return <div className="Index backgroundType2 backgroundImg" style={{ backgroundImage: 'url(/images/background3.svg)' }}>
+    return <div className="Index backgroundType2 backgroundImg" style={{ backgroundImage: 'url(/images/fondo-08.svg)' }}>
 
         <div className="container_interaction">
 
@@ -124,6 +129,7 @@ const RouletteWheel = () => {
             {question != undefined ?
                 <Questions data={question} onResult={(dato) => {
                     setQuestion(undefined)
+                    setIconResult(undefined)
 
                     if (dato.value === true) {
                         const historyNew = new Map<number, boolean>();
@@ -137,13 +143,15 @@ const RouletteWheel = () => {
                     setHistory([...history, dato])
                 }} /> :
                 <div className="containner_roulette">
-                  {  /*<h1>{category[preguntaIndex]}</h1> */}
+                    {  /*<h1>{category[preguntaIndex]}</h1> */}
                     <Wheel
                         mustStartSpinning={spin}
                         prizeNumber={preguntaIndex}
                         data={data}
                         backgroundColors={['#3e3e3e', '#df3428']}
                         textColors={['#ffffff']}
+                        outerBorderWidth={3}
+                        radiusLineWidth={3}
                         onStopSpinning={() => {
                             setSpin(false)
                             onLoadQuestion(category[preguntaIndex])
@@ -151,11 +159,14 @@ const RouletteWheel = () => {
 
                         }
                     />
+                    {iconResult == undefined ? <></> :
+
+                        <img src={iconResult} className="roulette_icon" alt="" />
+                    }
                     <button onClick={() => {
                         pregunta()
                         setSpin(true)
                     }} className="btn" disabled={spin}>Girar</button>
-
                 </div>
 
             }

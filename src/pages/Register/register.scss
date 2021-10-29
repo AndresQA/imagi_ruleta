@@ -1,11 +1,19 @@
-.register_inputs{
+.register_inputs {
     display: flex;
     flex-direction: column;
     width: 85%;
-    input{
+    max-width: 380px;
+    input {
         margin: 10px;
         padding: 10px;
-        font-family: "Copperplate";
+        font-family: "Poppins", sans-serif;
         border: none;
+        background-color: #c4c4c4;
+        border-radius: 37px;
+       
     }
+}
+
+.register_inputs input::placeholder {
+    color: #4F4F4E;
 }

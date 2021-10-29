@@ -20,7 +20,7 @@ const Register = () => {
         history.push(Routes.ROULETTE)
     }
 
-    return <div className="Index backgroundImg" style={{ backgroundImage: 'url(/images/background2.svg)' }}>
+    return <div className="Index backgroundImg" style={{ backgroundImage: 'url(/images/fondo-07.svg)' }}>
 
         <div className="container">
             <h2>Ingresa tus datos</h2>
